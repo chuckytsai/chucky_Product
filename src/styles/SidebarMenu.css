@@ -1,0 +1,123 @@
+.navigation {
+    position: fixed;
+    width: 60px;
+    height: 100%;
+    background-color: rgb(234, 114, 28);
+    transition: 1s;
+    overflow-y: scroll;
+    z-index: 9999999;
+    left: -60px;
+    border-right: 0.5px solid white;
+    top: 0;
+}
+
+.IllustrateSidebar {
+    position: fixed;
+    width: 60px;
+    height: 100%;
+    transition: 1s;
+    overflow-y: hidden;
+    z-index: 9999999;
+    left: -60px;
+    color: rgb(234, 114, 28);
+    border-right: 0.5px solid white;
+    top: 0;
+}
+
+.navigation::-webkit-scrollbar,
+.IllustrateSidebar::-webkit-scrollbar {
+    display: none;
+}
+
+.IllustrateTitle {
+    font-size: 16px;
+    color: rgb(12, 8, 1);
+    margin-top: 15px;
+    margin-left: 10px;
+    font-weight: 800;
+}
+
+.IllustrateSidebar .Illustrate {
+    margin: 0 10px;
+    margin-top: 5px;
+    font-size: 14px;
+    text-align: left;
+    word-wrap: break-word;
+    color: aliceblue;
+    letter-spacing: 1.5px;
+    width: 140px;
+}
+
+.navigation ul {
+    padding-left: 8px;
+}
+
+.activeNav {
+    width: 180px;
+    left: 0;
+    overflow: hidden;
+    background-color: rgb(234, 114, 28);
+}
+
+.navigation ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navigation ul li {
+    position: relative;
+    width: 100%;
+    list-style: none;
+}
+
+.navigationLi a {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    text-decoration: none;
+    color: rgb(245, 241, 236);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.navigationLi a:hover {
+    background-color: rgb(245, 236, 244);
+    width: 98%;
+    color: rgb(234, 114, 28);
+    padding-left: 4px;
+    border-radius: 5px 0 0 5px;
+    opacity: 0.9;
+    font-weight: 700;
+}
+
+.navigation ul li a .title {
+    position: relative;
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    text-align: start;
+}
+
+.IndexIcon {
+    position: relative;
+    line-height: 50px;
+    width: 100%;
+}
+
+.IndexIcon a {
+    position: relative;
+    width: 100%;
+}
+
+.IndexIcon a svg {
+    width: 80px;
+    margin-left: 35px;
+    fill: white;
+}
+
+.IndexIcon a svg:hover {
+    fill: rgb(224, 230, 194);
+}
